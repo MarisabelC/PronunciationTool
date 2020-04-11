@@ -44,7 +44,7 @@ D
 E
    ear   early   earth   east   edge   education   effect   egg   elastic   electric   end   engine   enough   equal   error   even   event   ever   every   example   exchange   existence   expansion   experience   expert   eye
 
-  eight   electricity   eleven   Embassy   Empire   encyclopedia   engineer
+  electricity    Embassy   Empire   encyclopedia   engineer
 
  each   easy   economy   efficiency   effort   either   elimination   employer   empty   enemy   envelope   environment   envy   equation   erosion   eruption   evaporation   evening   exact   excitement   experiment   exercise   explanation   explosion   export   expression   extinction   eyebrow   eyelash
 
@@ -53,7 +53,7 @@ E
 F
    face   fact   fall   false   family   far   farm   fat   father   fear   feather   feeble   feeling   female   fertile   fiction   field   fight   finger   fire   first   fish   fixed   flag   flame   flat   flight   floor   flower   fly   fold   food   foolish   foot   for   force   fork   form   forward   fowl   frame   free   frequent   friend   from   front   fruit   full   future
 
-  February   fifteen   fifth   fifty   five   four   fourteen   fourth   forty   Friday
+  february  friday
 
  factor   failure   fair   famous   fan   fastening   fault   ferment   fertilizing   fever   fiber   figure   fin   financial   flash   flask   flesh   flint   flood   flour   flow   focus   foliation   forecast   forehead   foreign   forgiveness   fraction   fracture   fresh   friction   frost   frozen   fume   funnel   fun funny   fur   furnace   furniture   fusion
 
@@ -75,7 +75,7 @@ G
 H
    hair   hammer   hand   hanging   happy   harbor   hard   harmony   hat   hate   have   he   head   healthy   hearing   heart   heat   help   here   high   history   hole   hollow   hook   hope   horn   horse   hospital   hour   house   how   humor
 
-  half   hiss   hotel   hundred   hyena   hygiene   hysteria
+  half   hiss   hotel   hyena   hygiene   hysteria
 
  habit   handkerchief   handle   heavy   hedge   hill   hinge   hire   hold   holiday   home   honest   honey   hoof   host   human   hunt   hurry   hurt   husband
 
@@ -126,7 +126,7 @@ L
 M
    machine   man   manager   make   male   map   mark   market   married   match   material   mass   may   meal   measure   meat   medical   meeting   memory   metal   middle   military   milk   mind   mine   minute   mist   mixed   money   monkey   month   moon   more   morning   most   mother   motion   mountain   mouth   move   much   muscle   music
 
-  macaroni   madam   magnetic   malaria   mania   March   mathematics   May   meter   meow   microscope    million   minute   Monday   museum
+  macaroni   madam   magnetic   malaria   mania   March   mathematics   May   meter   meow   microscope   minute   Monday   museum
 
  magic   magnitude   manner   many   marble   margin   marriage   mast   mattress   mature   mean   meaning   medicine   medium   melt   member   mess   message   metabolism   mill   mineral   mixture   model   modern   modest   momentum   monopoly   mood   moral   moustache   mud   multiple   multiplication   murder
 
@@ -137,7 +137,7 @@ marked   miner
 N
    nail   name   narrow   nation   natural   near   necessary   neck   need   needle    net   new   news   night   no   noise   normal   north   nose   not   note   now   number   nut
 
-  neutron   nickel   nine   November
+  neutron   nickel  November
 
  nasty   nature   navy   neat   neglect   neighbor   nest   next   nice   node   nostril   nucleus   numerator   nurse
 
@@ -148,7 +148,7 @@ N
 O
    observation   of   off   offer   office   oil   old   on   only   open   operation   opinion   opposite   or   orange   order   organization   ornament   other   out   oven   over   owner
 
-  October   olive   once   omelet   one   opera   opium   orchestra   organism
+  October   olive   once   omelet   opera   opium   orchestra   organism
 
  obedient   officer   orchestra   ore   organ   origin   outcrop   outlier   overlap   oval   own   oxidation
 
@@ -188,7 +188,7 @@ R
 S
    sad   safe   sail   salt   same   sand   say   scale   school   science   scissors   screw   sea   seat   second   secret   secretary   see   seed   selection   self   send   seem   sense   separate   serious   servant   sex   shade   shake   shame   sharp   sheep   shelf   ship   shirt   shock   shoe   short   shut   side   sign   silk   silver   simple   sister   size   skin   skirt   sky   sleep   slip   slope   slow   small   smash   smell   smile   smoke   smooth   snake   sneeze   snow   so   soap   society   sock   soft   solid   some   son   song   sort   sound   soup   south   space   spade   special   sponge   spoon   spring   square   stage   stamp   star   start   statement   station   steam   steel   stem   step   stick   sticky   stiff   still   stitch   stocking   stomach   stone   stop   store   story   straight   strange   street   stretch   strong   structure   substance   such   sudden   sugar   suggestion   summer   sun   support   surprise   sweet   swim   system
 
-  salad   sardine   Saturday   second   September   serum   seven   sir   six   sixteen   sport   Sunday
+  salad   sardine   Saturday   second   September   serum    sir   sport   Sunday
 
  sac   sale   sample   satisfaction   saturated   saucer   saving   scale   scarp   schist   scratch   screen   seal   search   security   secretion   section   sedimentary   selfish   sensitivity   sentence   sepal   service   set   shadow   shale   share   shave   shear   sheet   shell   shore   shoulder   show   sight   sill   similarity   since   skull   slate   sleeve   slide   social   soil   soldier   solution   solvent   sorry   spark   specialization   specimen   speculation   spirit   spit   splash   spot   stable   stain   stair   stalk   stamen   statistics   steady   stimulus   storm   strain   straw   stream   strength   stress   strike   string   study   subject   substitution   subtraction   success   successive   sucker   sum   supply   surface   surgeon   suspension   suspicious   swelling   swing   switch   sympathetic
 
@@ -199,7 +199,7 @@ S
 T
    table   tail   take   talk   tall   taste   tax   teaching   tendency   test   than   that   the   then   theory   there   thick   thin   thing   this   though   thought   thread   throat   through   thumb   thunder   ticket   tight   tired   till   time   tin   to   toe   together   tomorrow   tongue   tooth   top   touch   town   trade   train   transport   tray   tree   trick   trousers   true   trouble   turn   twist
 
-  tapioca   taxi   tea   telegram   telephone   ten   terrace   theater   thermometer   third   thirteen   thirty   thousand   three   Thursday   toast   tobacco   torpedo   Tuesday   turbine  twelve   twenty   twice   two
+  tapioca   taxi   tea   telegram   telephone terrace   theater   thermometer   third     Thursday   toast   tobacco   torpedo   Tuesday   turbine  twice
 
  tailor   tame   tap   tear   tent   term   texture   thickness   thief   thimble   thorax   threat   thrust   tide   tie   tissue   tongs   too   total   towel   tower   traffic   tragedy   transmission   transparent   trap   travel   treatment   triangle   truck   tube   tune   tunnel   twin   typist
 
