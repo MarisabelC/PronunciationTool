@@ -38,9 +38,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Category _category;
   bool _loading=true;
   double _progressValue=0.0;
+
   Map<String, String> _play = {
     'en_US': 'Play',
-    'es_ES': 'jugar',
+    'es_ES': 'Jugar',
     'zh': '玩'
   };
 
@@ -247,7 +248,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           navigateToCategoryPage();
                         },
                         child: Text(
-                          _play[_settingPage.language],
+                          'Play',
                           style: TextStyle(fontSize: 25.0),
                         ),
                       ),
@@ -270,7 +271,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           navigateToCategoryPage();
                         },
                         child: Text(
-                          _practice[_settingPage.language],
+                          'Practice',
                           style: TextStyle(fontSize: 25.0),
                         ),
                       ),

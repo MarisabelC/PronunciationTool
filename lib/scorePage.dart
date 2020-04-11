@@ -35,7 +35,7 @@ class _ScorePageState extends State<ScorePage> {
 
   Map<String, String> _correct = {
     'en_US': ' correct words ',
-    'es_ES': ' plabras correctas ',
+    'es_ES': ' palabras correctas ',
     'zh_Hant': ' 總 话 '
   };
 

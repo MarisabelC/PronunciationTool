@@ -60,12 +60,10 @@ class _DisplayPageState extends State<DisplayPage> {
   };
 
   Map<String, String> _start = {
-    'en_US': 'start',
-    'es_ES': 'empezar',
+    'en_US': 'Start',
+    'es_ES': 'Empezar',
     'zh': '开始'
   };
-
-
 
   @override
   void initState() {
@@ -75,6 +73,7 @@ class _DisplayPageState extends State<DisplayPage> {
     _texToVoice.initTts();
     initSpeechState();
     Screen.keepOn(true);
+    _time = widget.startTime;
     _scorePage = ScorePage(
       title: 'Score',
       goodScore: widget.startTime / 5,
@@ -93,7 +92,6 @@ class _DisplayPageState extends State<DisplayPage> {
 
   void _startTimer() {
 //    _start=10;
-    _time = widget.startTime;
     const oneSec = const Duration(seconds: 1);
     _timer = new Timer.periodic(
       oneSec,
@@ -200,16 +198,16 @@ class _DisplayPageState extends State<DisplayPage> {
     setState(() {
       for (String data in wordList) {
         for (int j = 0; j < textList.length; j++) {
-          print( textList[j]+' - ' + data);
+          print(textList[j] + ' - ' + data);
           if (data == textList[j]) {
-            _texToVoice.newVoiceText = _correct[widget.language];
-            _texToVoice.speak();
-
+            if (_time>1) {
+              _texToVoice.newVoiceText = _correct[widget.language];
+              _texToVoice.speak();
+            }
             if (!widget.isPractice) {
               _getWord();
               _incrementScore();
-            }else {
-
+            } else {
               widget.needList.remove(_word);
               print(widget.needList);
               print(widget.needList.indexOf(_word));
@@ -352,7 +350,9 @@ class _DisplayPageState extends State<DisplayPage> {
                       Expanded(
                         flex: 7,
                         child: Container(
-                          alignment: widget.isPractice? Alignment.bottomCenter:Alignment.center,
+                          alignment: widget.isPractice
+                              ? Alignment.bottomCenter
+                              : Alignment.center,
                           child: Text(
                             '$_word',
                             textAlign: TextAlign.center,
@@ -556,71 +556,103 @@ class _DisplayPageState extends State<DisplayPage> {
                           ),
                         ],
                       )
-                    : Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Expanded(
-                            flex: 8,
-                            child: Visibility(
-                              visible: !_visible,
-                              child: Container(
-                                alignment: Alignment.topRight,
-                                child: ButtonTheme(
-                                  minWidth:
-                                      MediaQuery.of(context).size.width / 2,
-                                  child: FlatButton(
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(18.0),
-                                        side: BorderSide(color: Colors.white)),
-                                    color: Colors.black54,
-                                    textColor: Colors.white,
-                                    disabledColor: Colors.grey,
-                                    disabledTextColor: Colors.black,
-                                    padding: EdgeInsets.all(8.0),
-                                    splashColor: Colors.blueAccent,
-                                    onPressed: () {
-                                      _visible = !_visible;
-                                      _texToVoice.newVoiceText ='3, 2, 1'+_start[widget.language];
-                                      _texToVoice.rate= .5;
-                                      _texToVoice.speak();
-                                      Future.delayed (const Duration(milliseconds: 1500), () {
-                                        startListening();
-                                        _startTimer();
-                                      });
-
-                                    },
-                                    child: Text(
-                                      _start[widget.language],
-                                      style: TextStyle(fontSize: 25.0),
+                    : Column(
+                      children: <Widget>[
+                        Expanded(
+                          flex:8,
+                          child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                Expanded(
+                                  flex: 8,
+                                  child: Visibility(
+                                    visible: !_visible,
+                                    child: Container(
+                                      alignment: Alignment.topRight,
+                                      child: ButtonTheme(
+                                        minWidth:
+                                            MediaQuery.of(context).size.width / 2,
+                                        child: FlatButton(
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(18.0),
+                                              side: BorderSide(color: Colors.white)),
+                                          color: Colors.black54,
+                                          textColor: Colors.white,
+                                          disabledColor: Colors.grey,
+                                          disabledTextColor: Colors.black,
+                                          padding: EdgeInsets.all(8.0),
+                                          splashColor: Colors.blueAccent,
+                                          onPressed: () {
+                                            _visible = !_visible;
+                                            _texToVoice.newVoiceText = '3. 2. 1. go';
+                                            _texToVoice.speak();
+                                            Future.delayed(
+                                                const Duration(milliseconds: 1500),
+                                                () {
+                                              startListening();
+                                              _startTimer();
+                                            });
+                                          },
+                                          child: Text(
+                                            _start[widget.language],
+                                            style: TextStyle(fontSize: 25.0),
+                                          ),
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 2,
-                            child: Visibility(
-                              visible: _visible,
-                              child: IconButton(
-                                alignment: Alignment.topCenter,
-                                icon: Icon(
-                                  Icons.arrow_forward,
-                                  size: 30,
+                                Expanded(
+                                  flex: 2,
+                                  child: Visibility(
+                                    visible: _visible,
+                                    child: IconButton(
+                                      alignment: Alignment.topCenter,
+                                      icon: Icon(
+                                        Icons.arrow_forward,
+                                        size: 30,
+                                      ),
+                                      onPressed: () {
+                                        startListening();
+                                        _decrementScore();
+                                        setState(() {
+                                          _getWord();
+                                        });
+                                      },
+                                    ),
+                                  ),
                                 ),
-                                onPressed: () {
-                                  startListening();
-                                  _decrementScore();
-                                  setState(() {
-                                    _getWord();
-                                  });
-                                },
+                              ],
+                            ),
+                        ),
+                        Visibility(
+                          visible: _visible,
+                          child: Expanded(
+                            flex: 4,
+                            child: Container(
+                              width: 40,
+                              height: 40,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                      blurRadius: .26,
+                                      spreadRadius: level * 1.5,
+                                      color: Colors.black.withOpacity(.5))
+                                ],
+                                color: Colors.white,
+                                shape: BoxShape.circle,
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.mic),
                               ),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                        Expanded(flex: 2, child: Text(''),)
+                      ],
+                    ),
               ),
             ],
             crossAxisAlignment: CrossAxisAlignment.center,

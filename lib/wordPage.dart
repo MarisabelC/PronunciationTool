@@ -235,7 +235,7 @@ class _WordPageState extends State<WordPage> {
                         flex: 5,
                         child: Container(
                           child: FlatButton(
-                              child: Text('All'),
+                              child: Text(_all[widget.language]),
                               onPressed: () {
                                 swapColor(true);
                               }),
@@ -245,7 +245,7 @@ class _WordPageState extends State<WordPage> {
                         flex: 5,
                         child: Container(
                           child: FlatButton(
-                              child: Text('Need Improvement'),
+                              child: Text(_need[widget.language]),
                               onPressed: () {
                                 if (_displayPage.needList.isNotEmpty) {
                                   _needList = _displayPage.needList;
