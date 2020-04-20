@@ -175,6 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    double fontSize= MediaQuery.of(context).size.height/30 ;
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
@@ -249,7 +250,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           'Play',
-                          style: TextStyle(fontSize: 25.0),
+                          style: TextStyle(fontSize:fontSize),
                         ),
                       ),
                     ),
@@ -272,7 +273,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: Text(
                           'Practice',
-                          style: TextStyle(fontSize: 25.0),
+                          style: TextStyle(fontSize: fontSize),
                         ),
                       ),
                     ),
@@ -302,21 +303,24 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.deepPurpleAccent,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings,color:Colors.white,),
-            title: Text('Setting',style: TextStyle(color: Colors.white,)),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.help,color: Colors.white,),
-            title: Text('How to use',style: TextStyle(color: Colors.white,),),
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.black,
-        onTap: _onItemTapped,
+      bottomNavigationBar: Visibility(
+        visible: !_loading,
+        child: BottomNavigationBar(
+          backgroundColor: Colors.deepPurpleAccent,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings,color:Colors.white,),
+              title: Text('Setting',style: TextStyle(color: Colors.white,)),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.help,color: Colors.white,),
+              title: Text('How to use',style: TextStyle(color: Colors.white,),),
+            ),
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.black,
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }

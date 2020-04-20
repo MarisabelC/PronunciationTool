@@ -68,7 +68,7 @@ G
 
  gate   generation   germ   germinating   gill   glacier   gland   god   grand   grateful   grating   gravel   grease   grief   grocery   groove   gross   ground   guard   guarantee   guess   gum
 
-  gasworks   goldfish   goodlooking   good  goodnight
+  gasworks   goldfish  good  goodnight
 
  gardener
 
@@ -124,9 +124,9 @@ L
  laughing    learner   locker   locking
 
 M
-   machine   man   manager   make   male   map   mark   market   married   match   material   mass   may   meal   measure   meat   medical   meeting   memory   metal   middle   military   milk   mind   mine   minute   mist   mixed   money   monkey   month   moon   more   morning   most   mother   motion   mountain   mouth   move   much   muscle   music
+   machine   man   manager   make   male   map   mark   market   married   match   material   mass  meal   measure   meat   medical   meeting   memory   metal   middle   military   milk   mind   mine   minute   mist   mixed   money   monkey   month   moon   more   morning   most   mother   motion   mountain   mouth   move   much   muscle   music
 
-  macaroni   madam   magnetic   malaria   mania   March   mathematics   May   meter   meow   microscope   minute   Monday   museum
+  macaroni   madam   magnetic   malaria   mania   March   mathematics   meter   meow   microscope   minute   Monday   museum
 
  magic   magnitude   manner   many   marble   margin   marriage   mast   mattress   mature   mean   meaning   medicine   medium   melt   member   mess   message   metabolism   mill   mineral   mixture   model   modern   modest   momentum   monopoly   mood   moral   moustache   mud   multiple   multiplication   murder
 

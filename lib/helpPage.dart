@@ -97,7 +97,6 @@ class _HelpPageState extends State<HelpPage> {
   }
 
   bool _isUse(String sentence) {
-    print(sentence);
     return sentence.contains('use to') || sentence.contains('usar');
   }
 

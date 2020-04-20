@@ -70,6 +70,7 @@ class _CategoryPageState extends State<CategoryPage> {
 
   @override
   Widget build(BuildContext context) {
+    double fontSize= MediaQuery.of(context).size.height/25;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: _backgroundColor,
@@ -104,7 +105,7 @@ class _CategoryPageState extends State<CategoryPage> {
                         alignment: Alignment.center,
                         child: Text(
                           '${entries[index]}',
-                          style: TextStyle(fontSize: 25.0),
+                          style: TextStyle(fontSize: fontSize),
                         ),
                       ),
                     ),

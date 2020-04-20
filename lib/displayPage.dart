@@ -48,11 +48,7 @@ class _DisplayPageState extends State<DisplayPage> {
     'es_ES': 'correcto',
     'zh': '正确'
   };
-  Map<String, String> _repeat = {
-    'en_US': 'repeat after me. ',
-    'es_ES': 'repite despues de mi.  ',
-    'zh': '重复, '
-  };
+
   Map<String, String> _try = {
     'en_US': 'try again',
     'es_ES': 'intenta otra vez',
@@ -255,6 +251,7 @@ class _DisplayPageState extends State<DisplayPage> {
 
   @override
   Widget build(BuildContext context) {
+    double fontSize= MediaQuery.of(context).size.height/20;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: _backgroundColor,
@@ -299,7 +296,7 @@ class _DisplayPageState extends State<DisplayPage> {
                                   color: _letterColor,
                                   fontWeight: FontWeight.w800,
                                   letterSpacing: 0.5,
-                                  fontSize: 30,
+                                  fontSize: fontSize,
                                 ),
                               ),
                             ],
@@ -330,7 +327,7 @@ class _DisplayPageState extends State<DisplayPage> {
                                   color: _letterColor,
                                   fontWeight: FontWeight.w800,
                                   letterSpacing: 0.5,
-                                  fontSize: 30,
+                                  fontSize: fontSize,
                                 ),
                               ),
                             ],
@@ -496,8 +493,7 @@ class _DisplayPageState extends State<DisplayPage> {
                                     if (index != -1) {
                                       str = str.substring(0, index);
                                     }
-                                    _texToVoice.newVoiceText =
-                                        _repeat[widget.language] + str;
+                                    _texToVoice.newVoiceText = str;
                                     _texToVoice.speak();
                                     _isTry = false;
                                   },
@@ -646,6 +642,8 @@ class _DisplayPageState extends State<DisplayPage> {
                               ),
                               child: IconButton(
                                 icon: Icon(Icons.mic),
+                                iconSize: MediaQuery.of(context).size.height/25,
+                                alignment: Alignment.center,
                               ),
                             ),
                           ),

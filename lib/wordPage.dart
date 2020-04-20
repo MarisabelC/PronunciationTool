@@ -86,7 +86,6 @@ class _WordPageState extends State<WordPage> {
 //    prefs.clear();
     setState(() {
       _needList = prefs.getStringList(widget.language+'-'+widget.category.letter) ?? List.from(_allList);
-      print(_needList);
     });
   }
 
@@ -135,7 +134,6 @@ class _WordPageState extends State<WordPage> {
         _needColor = temp;
         if (_isAll) {
           _wordList = _allList;
-          print(_wordList);
         }
         else
           _wordList= _needList;
@@ -146,7 +144,6 @@ class _WordPageState extends State<WordPage> {
   Widget updateListView() {
     if (_previousText.length>_searchText.length) {
       _filteredWords = _wordList;
-      print('update');
     }
     if (_searchText.isNotEmpty) {
       List tempList = new List();

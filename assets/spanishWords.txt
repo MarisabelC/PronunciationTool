@@ -5564,8 +5564,7 @@ próximo
 próximos 	    	    
 psicología	    	    
 psicológica	    	    
-psicológico	    	    
-psoe 	   	   
+psicológico
 publica	    	    	    	    
 publicaciones	    	    
 publicación	    	    
@@ -5652,14 +5651,12 @@ quería
 querían	    	    
 queso 	    	    
 quiebra	    	    
-quien	   	   
-quienes 	   	   
+quién
 quiera	    	    
 quieran	    	    
 quieras	    	    
 quiere	   	   
-quieren	   	    
-quieres	    	    
+quieren
 quiero	   	   
 quijote	    	    
 quince	    	    
@@ -5676,8 +5673,7 @@ quizás
 quién	   	   
 quiénes 	    	    
 qué 	  	  
-química 	    	    
-químicas 	    	    
+química
 químicos 	    	    
 r
 rabia	    	    
