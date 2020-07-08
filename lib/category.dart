@@ -17,6 +17,7 @@ class Category {
   }
 
   init() {
+    print('init');
     _englishParser();
     _spanishParser();
     _chineseParser();
